@@ -13,9 +13,9 @@ function getChatbotResponse() {
   const OPENAI_API_KEY = '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';
   const API_URL = 'https://api.openai.com/v1/chat/completions';
   const prompt = `
-Generate a short, random compliment for Bozzle in the second person, including fun emojis, given that Bozzle is clever, beautiful, lovely, smart, wonderful, gorgeous, loving, and pretty. The complimenter is in love with Bozzle.
+Generate a short, random compliment for Bozzle in the second person, including fun emojis, given that Bozzle is great, beautiful, lovely, smart, wonderful, gorgeous, loving, and pretty. The complimenter is in love with Bozzle.
 Examples:
-You are such a clever Bozzle!
+You are such a great Bozzle!
 Bozzle, you are so lovely!
 What a beautiful Bozzle!
   `;
@@ -42,7 +42,7 @@ What a beautiful Bozzle!
     })
     .catch(error => {
       console.error('Error:', error);
-      return 'What a clever Bozzle!';
+      return 'What a great Bozzle!';
     });
 }
 
@@ -50,7 +50,7 @@ function getChatbotPoem() {
   const OPENAI_API_KEY = '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';
   const API_URL = 'https://api.openai.com/v1/chat/completions';
   const prompt = `
-Generate a short poem [of 8-12 lines] about Bozzle, written in the second person, that highlights a few of Bozzle's traits – she is clever, beautiful, lovely, smart, wonderful, gorgeous, loving, and pretty. Include returns between each line and double returns between verses. Use fun emojis for emphasis. The author of the poem is in love with Bozzle.
+Generate a short poem [of 8-12 lines] about Bozzle, written in the second person, that highlights a few of Bozzle's traits – she is great, beautiful, lovely, smart, wonderful, gorgeous, loving, and pretty. Include returns between each line and double returns between verses. Use fun emojis for emphasis. The author of the poem is in love with Bozzle.
   `;
   const requestData = {
     model: 'gpt-3.5-turbo',

@@ -125,7 +125,7 @@ function modifyPage() {
     })
     .catch(error => {
       console.error('Error loading responses:', error);
-      leftButton.textContent = 'What a clever Bozzle!';
+      leftButton.textContent = 'What a great Bozzle!';
       leftButton.disabled = false;
     });
 }
